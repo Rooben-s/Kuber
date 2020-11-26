@@ -64,6 +64,28 @@
 
 }
 
+.main-header-inner {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: white;
+}
+
+.main-header-inner .showcase {
+  padding-top: 50px;
+}
+
+.tabs .indicator {
+  background-color: cyan !important;
+}
+
+.btn-extend {
+  display: block;
+  width: 100%;
+
+}
+
 @media (max-width: 500px) {
   .section-developers,
   .section-podcast {
