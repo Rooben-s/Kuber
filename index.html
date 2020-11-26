@@ -56,7 +56,7 @@
         <div class="col s12 m10 offset-m1 center">
           <h5>Welcome To Kuber</h5>
           <h1>Implementing Changes to Cloud Data</h1>
-          <p>Upload anywhere with a single click. We'll then optimsie and distribute your work.</p>
+          <p>Upload anywhere with a single click. We'll then optimise and spread it in our global network.</p>
           <br><br>
           <a href="solutions.html" class="btn btn-large white cyan-text">Learn More</a>
           <a href="signup.html" class="btn btn-large cyan white-text">Sign Up</a>
@@ -73,21 +73,21 @@
           <div class="card-panel">
             <i class="fa fa-database fa-3x cyan-text text-darken-2"></i>
             <h5 class="grey-text text-darken-4">NoSQL Databases</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
+            <p>Storage and retrieval of data other than the tabular relations used in relational databases</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card-panel">
             <i class="fa fa-user fa-3x cyan-text text-darken-2"></i>
             <h5 class="grey-text text-darken-4">Free Account</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
+            <p>Get all the benefits of being a member without paying for an account</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card-panel">
             <i class="fa fa-bolt fa-3x cyan-text text-darken-2"></i>
             <h5 class="grey-text text-darken-4">Fast Connections</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, suscipit!</p>
+            <p>Enhanced, Online experience for our customers with a proven history in utilities connections</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
       <div class="row">
         <div class="col s12 m6">
           <h3><span class="cyan-text text-darken-1">About</span> Us</h3>
-          <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta at natus magnam! Lorem, ipsum dolor sit amet consectetur </p>
+          <p class="flow-text"> Kuber is a suite of cloud computing services that runs on the same infrastructure that Kubernet uses internally for its end-user products. </p>
         </div>
         <div class="col s12 m6">
           <img src="img/tech3.jpg" alt="" class="circle responsive-img">
@@ -155,7 +155,78 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Section: Podcast -->
+    <section class="section section-podcast white-text">
+      <div class="primary-overlay valign-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m8">
+              <h4>Listen to the Kuber Podcast</h4>
+              <p>Every Thursday at 5pm EST</p>
+            </div>
+            <div class="col s12 m4">
+              <a href="#" class="btn cyan btn-large">
+                <i class="fa fa-podcast"></i> Audio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section:Testimonial -->
+    <section class="section section-testimonial grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="carousel carousel-slider center">
+              <div class="carousel-item" href="#one!">
+                <h2>Testimonial 1</h2>
+                <p class="flow-text">"You can talk about how effective your services are and how trustworthy your company is all day, but what are prospective clients going to think about this?"
+                  <p>
+                    <em>- Rooben From Microsystems</em>
+                  </p>
+                </p>
+                <div class="carousel-fixed-item center hide-on-small-and-down">
+                  <a href="#" class="btn grey">Read More</a>
+                </div>
+              </div>
+              <div class="carousel-item" href="#two!">
+                <h2>Testimonial 2</h2>
+                <p class="flow-text">"Highlighting positive media coverage is a great way for companies to generate buzz around their business while building their authority in the industry"
+                  <p>
+                    <em>- Mike Smith From Edge INC</em>
+                  </p>
+                </p>
+                <div class="carousel-fixed-item center hide-on-small-and-down">
+                  <a href="#" class="btn grey">Read More</a>
+                </div>
+              </div>
+              <div class="carousel-item" href="#three!">
+                <h2>Testimonial 3</h2>
+                <p class="flow-text">"We love the approachable format and the fact that it chose to feature customers that users can really relate to."
+                  <p>
+                    <em>- Karen Williams from Techsoft</em>
+                  </p>
+                </p>
+                <div class="carousel-fixed-item center hide-on-small-and-down">
+                  <a href="#" class="btn grey">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   
+
+
+
 
 
 
@@ -166,7 +237,9 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Custom JS & jQuery here
+      $(`.carousel.carousel-slider`).carousel({fullWidth: true});
+      $(`.button-collapse`).sideNav();
+      
       
     });
   </script>
