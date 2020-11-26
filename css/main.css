@@ -59,7 +59,10 @@
 
 }
 
+.carousel-item p {
+  font-size: 20px !important;
 
+}
 
 @media (max-width: 500px) {
   .section-developers,

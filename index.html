@@ -29,7 +29,7 @@
             <li><a class="active-link" href="index.html">Home</a></li>
             <li><a href="solutions.html">Solutions</a></li>
             <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="" class="btn cyan">Login</a></li>
+            <li><a href="#login-modal" class="btn cyan modal-trigger">Login</a></li>
             <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
             <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -223,8 +223,63 @@
     </section>
 
 
+    <!-- footer -->
+    <footer class="page-footer cyan darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About Us</h5>
+            <p class="grey-text text-lighten-4">Kuber is a suite of cloud computing services that runs on the same infrastructure that Kubernet uses internally for its end-user products. </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Home 1</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="solutions.html">Solutions</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="signup.html">Signup</a>
+              </li>
   
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright cyan darken-1">
+        <div class="container">
+          Kuber &copy; 2020
+          <a class="grey-text text-lighten-4 right" href="#!">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
 
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your account dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Reset Password</a>
+      <a href="#!" class="modal-action modal-close btn cyan">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
 
 
 
@@ -239,6 +294,7 @@
     $(document).ready(function () {
       $(`.carousel.carousel-slider`).carousel({fullWidth: true});
       $(`.button-collapse`).sideNav();
+      $('.modal').modal();
       
       
     });
